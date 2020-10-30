@@ -1,0 +1,47 @@
+
+*{
+   box-sizing: border-box; 
+}
+body{background-repeat: round; background-image: url(./image/pexels-element-digital-1470170.jpg);background-size: cover; height: fit-content;
+
+}
+.center{
+   height: 700px;
+   flex-wrap: wrap;padding: 7%; text-align: center; 
+   
+}
+.colum{
+
+   text-align: center; box-shadow: 0 0 20px rgba(5, 5, 5, 0.336);
+   border-color: black; border-radius: 16px;
+  margin-left: auto; margin-top: 39px;background-color: whitesmoke;
+}
+@media (min-width: 992px) {
+.colum {
+   
+   border-radius: 16px;
+   
+   padding: 15px 25px 25px 25px;
+   max-width: 519px;
+   }
+}
+i{opacity: 0.5;
+   position: relative;right: 26px;
+}
+
+
+.d1{
+padding: 11px
+}
+.input{height: 32px;border-radius: 10px;
+   width: 85%; outline-style: none;
+}
+.inputsubmit{
+   height: 32px;border-radius: 10px;width: 40%; background: black;
+   color: red;outline-style: none;
+}
+/*:-webkit-file-upload-button{
+   background: black;
+   color: red;
+   
+}*/

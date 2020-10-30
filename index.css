@@ -1,0 +1,84 @@
+body{
+    background-image: url(./image/karthik-swarnkar-AoNvwL-Dmtw-unsplash.jpg);
+    background-size: cover;
+}
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.top{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 3%;
+
+}
+.nav{
+    margin-right: 11%;
+    font-size: 20px;
+}
+.nav:hover{
+    color: black;
+
+}
+.box{width: 50%;
+    
+    padding: 10px;
+   
+   
+}
+.topleft{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    color:white;
+}
+@media (max-width:492px)
+{
+    .nav{
+        display: none;
+    }
+    
+}
+.display{ display: none;
+    
+}@media (max-width:492px)
+{
+    .display{
+        display: grid;
+    }
+    .nav1{color: whitesmoke;
+        display: inline-table;padding: 5px;
+    }
+    .nav1:hover{
+        color: black;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    
+}
+.text{
+    color: rgb(40, 182, 40);
+    text-align: center;
+    font-weight: 400;
+    font-family: cursive;
+    padding-top: 7%;
+    font-size: 25px;
+}
+.read{
+    padding: 4%;
+    text-align: center;
+}
+span{
+    color: black;
+    padding: 10px;
+    background-color: whitesmoke;
+}
+.a:hover{
+    color: black;
+}
