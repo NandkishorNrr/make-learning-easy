@@ -1,366 +1,116 @@
-body{
-    background-image: url(./image/karthik-swarnkar-AoNvwL-Dmtw-unsplash.jpg);
-    background-size: cover;
-}
-*{
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 a{
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
 }
-.top{
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 10%;
+  height: 60px;
+  background: transparent;
+  /* background: rgba(0,0,0,0.6); */
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ccc;
+
+}
+
+.navbar nav a {
+  margin: 0 10px;
+  /* background: red; */
+  text-decoration: none;
+  color: #ccc;
+  /* padding: ; */
+}
+.navbar nav a:hover{
+  color: white;
+}
+.navbar nav .active{
+  padding: 5px;
+  border-bottom: 1px solid white;
+}
+@media (max-width:986px) {
+  .navbar {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 3%;
-
-}
-.nav{
-    margin-right: 11%;
-    font-size: 20px;
-}
-.nav:hover{
-    color: black;
-
-}
-.box{width: 50%;
-    
-    padding: 10px;
-   
-   
-}
-.topleft{
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: nowrap;
-    color:white;
-}
-@media(max-width:700px){
-    .topleft{
-        display: none;
-    }
-
-}
-.sign {
-   
-    display: flex;
-    
-    align-items: center;
-    width: 50%;
-    height: 50%;
-    background-image: radial-gradient(
-      ellipse 50% 35% at 50% 50%,
-      #6b1839,
-      transparent
-    );
-    
-    letter-spacing: 2px;
-   
-    font-family: "Clip";
-    text-transform: uppercase;
-    font-size: 35px;
-    color: #ffe6ff;
-    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
-      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
-      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
-    animation: shine 2s forwards, flicker 3s infinite;
+    flex-direction: column;
+    justify-content: space-around;
+    /* padding: 10px; */
+    /* height: 60px; */
   }
-.sign{
-    position: relative;
-    bottom: 25px;
-    
-}
-@media(max-width:486px){
-    .sign{position: relative;
-        top: -11px;
-        font-size: 24px;
-        right: 50px;
 
-    }
-}
-@keyframes blink {
-    0%,
-    22%,
-    36%,
-    75% {
-      color: #ffe6ff;
-      text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
-        -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
-        0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
-    }
-    28%,
-    33% {
-      color: #ff65bd;
-      text-shadow: none;
-    }
-    82%,
-    97% {
-      color: #ff2483;
-      text-shadow: none;
-    }
+  .navbar .logo {
+    margin: 0;
   }
-  
-  .flicker {
-    animation: shine 2s forwards, blink 3s 2s infinite;
+
+  .navbar nav a {
+    margin: 10px;
   }
-  
-  .fast-flicker {
-    animation: shine 2s forwards, blink 3s 1s infinite;
-  }
-  
-  @keyframes shine {
-    0% {
-      color: #6b1839;
-      text-shadow: none;
-    }
-    100% {
-      color: #ffe6ff;
-      text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
-        -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
-        0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
-    }
-  }
-  
-  /*@keyframes flicker {
-    from {
-      opacity: 1;
-    }
-  
-    4% {
-      opacity: 0.9;
-    }
-  
-    6% {
-      opacity: 0.85;
-    }
-  
-    8% {
-      opacity: 0.95;
-    }
-  
-    10% {
-      opacity: 0.9;
-    }
-  
-    11% {
-      opacity: 0.922;
-    }
-  
-    12% {
-      opacity: 0.9;
-    }
-  
-    14% {
-      opacity: 0.95;
-    }
-  
-    16% {
-      opacity: 0.98;
-    }
-  
-    17% {
-      opacity: 0.9;
-    }
-  
-    19% {
-      opacity: 0.93;
-    }
-  
-    20% {
-      opacity: 0.99;
-    }
-  
-    24% {
-      opacity: 1;
-    }
-  
-    26% {
-      opacity: 0.94;
-    }
-  
-    28% {
-      opacity: 0.98;
-    }
-  
-    37% {
-      opacity: 0.93;
-    }
-  
-    38% {
-      opacity: 0.5;
-    }
-  
-    39% {
-      opacity: 0.96;
-    }
-  
-    42% {
-      opacity: 1;
-    }
-  
-    44% {
-      opacity: 0.97;
-    }
-  
-    46% {
-      opacity: 0.94;
-    }
-  
-    56% {
-      opacity: 0.9;
-    }
-  
-    58% {
-      opacity: 0.9;
-    }
-  
-    60% {
-      opacity: 0.99;
-    }
-  
-    68% {
-      opacity: 1;
-    }
-  
-    70% {
-      opacity: 0.9;
-    }
-  
-    72% {
-      opacity: 0.95;
-    }
-  
-    93% {
-      opacity: 0.93;
-    }
-  
-    95% {
-      opacity: 0.95;
-    }
-  
-    97% {
-      opacity: 0.93;
-    }
-  
-    to {
-      opacity: 1;
-    }
-  }*/
-  
-
-
-
-
-
-
-
-
-
-
-
-/*@media(max-width:298px){
-    .topleft{
-    
-        top: 3px;
-    }
-}*/
-
-
-@media (max-width:492px)
-{
-    .nav{
-        display: none;
-    }
-    
-}
-.display{ display: none;
-    
-}
-@media (max-width:700px)
-{
-    .display{
-        display: grid;
-        position: relative;
-        bottom: -4px;
-        font-size: 15px;
-    }
-}
-    @media screen {
-        
-    
-    .nav1{color: whitesmoke;
-        display: inline-table;padding: 5px;
-    }
-    .nav1:hover{
-        color: black;
-    }
-    a{
-        text-decoration: none;
-        color: white;
-    }
-}
-    
-
-.text{
-   
-    text-align: center;
-    font-weight: 400;
-    font-family: cursive;
-    padding-top: 7%;
-    font-size: 25px;
-
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.read{
-    padding: 6%;
-    text-align: center;
-}
-.span{
-    background-image: linear-gradient(to right, #fc6076, #ff9231);
-    padding: 10px;color: white;
-    background-color:rgb(5, 97, 5)
-}
-.textchild{
-    padding: 14px;color: white;font-family: sans-serif;
-}
-@media (max-width:592px)
-{
-    .textchild{
-        font-size: 12px;
-        padding: 3px;
-    }
-}
-.a:hover{
-    color: black;
-}
-.font{
-    text-align: center;
-    font-size: 17px;
-    font-family:sans-serif;
-    color:limegreen;
-    letter-spacing: 1px;
-}
-@media(max-width:302px){
-    .font{ font-size: 10px;
-    position: relative;
-top: 58px;}
-}
-@media(max-width:302px){
-   .read{ position: relative;
-    top: 71px;}
-
-    .text{ position: relative;
-        top: 48px;
-
-    }
 }
 
-h4{
-    font-size: 25px;
-    color:white;
-    
-    letter-spacing: 1px;
+.header {
+  background: url("./image/blake-connally-IKUYGCFmfw4-unsplash.jpg") no-repeat center center/cover;
+  height: 80vh;
+  position: relative;
+  color: white;
+  /* opacity: 0.7; */
+  /* background-color: rgba(0,0,0,0.9); */
+}
+
+.header .content h1{
+  font-size: 2rem;
+  padding: 10px;
+}
+.content p{
+  padding: 0 10px;
+}
+.btn {
+  text-align: center;
+  margin: 10px 10px;
+  padding: 10px 20px;
+border-radius: 5px;
+border: none;
+outline: none;
+}
+.btn-success{
+  background: green;
+  /* color: white; */
+}
+.btn-success a{
+  color: white;
+}
+.header .content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* text-align: center; */
+  height: 80%;
+  /* padding: 0 120px; */
+  /* top: 50%; */
+  justify-content: center;
+}
+
+.header *{
+  z-index: 10;
+}
+.header::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:rgba(0, 0,0, 0.6);
 }
